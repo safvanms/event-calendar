@@ -1,0 +1,196 @@
+.calendar__page {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 25px;
+}
+
+.main__section {
+     width: 1100px;
+     height: 500px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     padding: 5px;
+     border-radius: 11px;
+}
+
+
+.calendar__container {
+     height: 270px;
+     display: flex;
+     align-items: center;
+     align-items: flex-start;
+     margin: 50px 45px;
+     gap: 15px;
+     border-bottom: 1px solid #dddd;
+     padding: 20px 0;
+}
+
+.events {
+     width: 36%;
+     border-right: 1px solid #dddd;
+     height: 100%;
+     overflow: scroll;
+}
+
+.event__details {
+     border-bottom: 1px solid #dddd;
+     width: 350px;
+}
+
+.event__details h4 {
+     margin: 5px 0 0 0;
+}
+
+.event__details h3 {
+     margin: 0 0 5px 0;
+}
+
+.event__details p {
+     margin: 0;
+}
+
+
+.events h2 {
+     margin: 0 0 20px 0;
+     border-bottom: 1px solid #dddd;
+     width: 70px;
+}
+
+.calendar {
+     display: flex;
+     align-items: flex-start;
+     gap: 35px;
+}
+
+.slot__sec {
+     height: 270px;
+     overflow: scroll;
+     width: 240px;
+}
+
+::-webkit-scrollbar {
+     width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: #dedede;
+     border-radius: 6px;
+}
+
+
+.slot__sec h4 {
+     margin: 0 0 10px 0;
+}
+
+.slot__sec p {
+     margin: 0 0 5px 0;
+}
+
+.time__slot {
+     text-align: center;
+     width: 200px;
+     padding: 5px 8px;
+     border: 1px solid #006bff;
+     border-radius: 5px;
+     margin-bottom: 8px;
+     cursor: pointer;
+     color: #006bff;
+}
+
+.disabled{
+     cursor:  not-allowed;
+     color: #aaaa;
+     border: 1px solid #aaaa;
+}
+
+.disabled:hover {
+     background-color: transparent !important;
+}
+
+.time__slot:hover {
+     background-color: #f7f7f7dd;
+}
+
+.dialog {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 9999;
+}
+
+.dialog-content {
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     text-align: center;
+     max-width: 400px;
+     width: 100%;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.close {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     font-size: 20px;
+     color: #333;
+}
+
+.dialog-content button {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     padding: 5px 20px;
+     cursor: pointer;
+     margin-top: 10px;
+     width: 100px;
+     font-size: 11px;
+     font-family: 'Poppins', sans-serif;
+}
+
+.dialog__inputs {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+}
+
+.dialog p {
+     margin: 0 0;
+}
+
+.dialog label {
+     text-align: left !important;
+}
+
+.dialog select,
+.dialog option,
+.dialog input {
+     width: 250px;
+     height: 30px;
+     font-size: 12px;
+     font-family: 'Poppins', sans-serif;
+}
+
+.dialog option {
+     padding: 5px 0;
+}
+
+.time__slot.selected {
+     background-color: #007bff;
+     color: #fff;
+}
